@@ -1,14 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Coin.css";
 
-function Coin (props) {
- 
+class Coin extends Component {
+  render() {
     return (
       <div className='Coin'>
-        <img src={props.info.imgSrc} alt={props.info.side} />
+        <img src={this.props.info.imgSrc} alt={this.props.info.side} />
       </div>
     );
-
+  }
 }
 
 export default Coin;
